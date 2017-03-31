@@ -1,0 +1,12 @@
+﻿using Microsoft.Owin;
+using Owin;
+
+[assembly: OwinStartupAttribute(typeof(ajlProject2.Startup))]
+namespace ajlProject2
+{
+    public partial class Startup {
+        public void Configuration(IAppBuilder app) {
+            ConfigureAuth(app);
+        }
+    }
+}
